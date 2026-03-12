@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Essence - Luxury Perfumes</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37; /* Gold color on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ecf0f1;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Products Grid */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .price {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* Hyperlink Button Style */
+        .btn {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #d4af37;
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        /* Cookie Banner Styles */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        #cookie-banner button {
+            background-color: #d4af37;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>L'Essence</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Collection</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Discover Your Signature Scent</h1>
+        <p>Handcrafted fragrances for the modern soul.</p>
+    </section>
+
+    <!-- Products Section -->
+    <div class="container" id="products">
+        <h2 style="text-align: center; margin-bottom: 30px;">Our Best Sellers</h2>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">Image of Rose Gold Bottle</div>
+                <h3>Rose Gold Elixir</h3>
+                <p>Notes of jasmine, rose, and vanilla.</p>
+                <div class="price">$85.00</div>
+                <!-- Hyperlink to a product detail page -->
+                <a href="product-detail.html" class="btn">View Details</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">Image of Ocean Blue Bottle</div>
+                <h3>Ocean Mist</h3>
+                <p>Fresh citrus, sea salt, and cedarwood.</p>
+                <div class="price">$60.00</div>
+                <a href="product-detail.html" class="btn">View Details</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">Image of Dark Wood Bottle</div>
+                <h3>Midnight Oud</h3>
+                <p>Deep amber, oud wood, and leather.</p>
+                <div class="price">$120.00</div>
+                <a href="product-detail.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 L'Essence Perfumes. All rights reserved.</p>
+        <p>
+            <!-- Hyperlink to Cookie Policy -->
+            <a href="cookie-policy.html">Cookie Policy</a> | 
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner">
+        <div>
+            We use cookies to improve your experience on our website. By continuing to use this site, you agree to our use of cookies.
+        </div>
+        <button onclick="acceptCookies()">Accept Cookies</button>
+    </div>
+
+    <!-- JavaScript for Cookies -->
+    <script>
+        function acceptCookies() {
+            // Hide the banner
+            document.getElementById('cookie-banner').style.display = 'none';
+            // In a real website, you would save a flag in LocalStorage here
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        // Check if cookies were already accepted
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
